@@ -1,2 +1,2 @@
 # Redflag-extension
-Notifying users of "Redflags" through a browser extension
+Notifying users of "Redflag" orders within internal systems through a browser extension
