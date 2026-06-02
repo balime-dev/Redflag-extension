@@ -1,0 +1,24 @@
+{
+  "manifest_version": 3,
+  "name": "Redflag Notifier",
+  "version": "1.6",
+  "description": "Shows redflagged order status in favicon and sends notifications.",
+  "permissions": [
+    "notifications"
+  ],
+  "host_permissions": [
+    "https://admin.transip.us/*"
+  ],
+  "content_scripts": [
+    {
+      "matches": [
+        "https://admin.transip.us/redflagged",
+        "https://admin.transip.us/redflagged/*"
+      ],
+      "js": [
+        "content.js"
+      ],
+      "run_at": "document_idle"
+    }
+  ]
+}
